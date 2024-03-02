@@ -51,7 +51,7 @@ def process(img,filename):
     file.close()
 
 
-def downscale_img(img, down_scale=2):
+def downscale_img(img, down_scale=3):
     height, width = img.size
     resized_img = img.resize((height // down_scale, width // down_scale))
     height, width = resized_img.size
