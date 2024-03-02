@@ -21,9 +21,7 @@ def main():
 def process(img,filename):
     img_extension = img.format
     resized_img, width, height = downscale_img(img)  # returns resized image itself, width and height in this order.
-    pixel = resized_img.load()
-  
-
+ 
     file = open(f"{filename}.txt", "w")
 
     for y in range(height):                 
